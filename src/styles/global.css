@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+  }
+  
+  .section {
+    padding: 100px 20px;
+    min-height: 100vh;
+  }
+  
+  main {
+    margin-top: 60px;
+  }
+  
+  :root {
+    --bg: #ffffff;
+    --text: #111111;
+    --accent: #00aaff;
+    --card: #f9f9f9;
+  }
+  
+  [data-theme="dark"] {
+    --bg: #111111;
+    --text: #f0f0f0;
+    --accent: #00ccff;
+    --card: #1e1e1e;
+  }
+  
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    scroll-behavior: smooth;
+  }
+  
+  .section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+  }
+  

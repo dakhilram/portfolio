@@ -1,0 +1,39 @@
+.about-section {
+    text-align: center;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .about-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ddd; /* fallback color if image doesn't load */
+  }
+  
+  
+  .about-text {
+    max-width: 600px;
+    text-align: center;
+  }
+  
+  .about-links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .about-links a {
+    text-decoration: none;
+    color: #00aaff;
+    font-weight: bold;
+  }
+  
