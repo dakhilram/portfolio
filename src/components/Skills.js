@@ -1,43 +1,72 @@
-import React from "react";
+import React, { useState } from "react";
 import skillData from "../config/skillData";
-import "./../styles/skills.css";
-import { motion } from "framer-motion";
+import "../styles/skills.css";
+import { FaCode, FaGlobe, FaTools, FaDatabase } from "react-icons/fa";
+
+const categories = [
+  { key: "All", label: "All", icon: <FaCode /> },
+  { key: "Web", label: "Web", icon: <FaGlobe /> },
+  { key: "Programming", label: "Programming", icon: <FaCode /> },
+  { key: "Tools", label: "Tools", icon: <FaTools /> },
+  { key: "Database", label: "Database", icon: <FaDatabase /> },
+];
 
 const Skills = () => {
+  const [activeCategory, setActiveCategory] = useState("All");
+
+  const filteredSkills =
+    activeCategory === "All"
+      ? skillData
+      : skillData.filter((skill) => skill.category === activeCategory);
+
+  const radius = 200;
+  const centerX = 250;
+  const centerY = 250;
+
   return (
-    <motion.div
-      className="section skills-section"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
-    >
+    <div className="section skills-section">
       <h2>My Skills</h2>
 
-      <div className="circle-container">
-        {skillData.map((skill, index) => {
-          const angle = (360 / skillData.length) * index;
-          const transformStyle = `rotate(${angle}deg) translate(130px) rotate(-${angle}deg)`;
+      <div className="skills-tabs">
+        {categories.map((tab) => (
+          <button
+            key={tab.key}
+            onClick={() => setActiveCategory(tab.key)}
+            className={activeCategory === tab.key ? "active" : ""}
+          >
+            {tab.icon} {tab.label}
+          </button>
+        ))}
+      </div>
+
+      <div className="skills-circle">
+        {filteredSkills.map((skill, index) => {
+          const angle = (2 * Math.PI * index) / filteredSkills.length;
+          const x = centerX + radius * Math.cos(angle) - 36;
+          const y = centerY + radius * Math.sin(angle) - 36;
 
           return (
-            <motion.div
+            <div
               key={skill.id}
-              className="skill-icon tooltip-container"
-              style={{ transform: transformStyle }}
-              whileHover={{ scale: 1.2 }}
-              transition={{ type: "spring", stiffness: 300 }}
+              className="skill-icon"
+              style={{
+                left: `${x}px`,
+                top: `${y}px`,
+              }}
             >
               <span>{skill.icon}</span>
               <div className="tooltip">
-                <strong>{skill.name}</strong><br />
-                {skill.experience}<br />
+                <strong>{skill.name}</strong>
+                <br />
+                {skill.experience}
+                <br />
                 {"⭐".repeat(skill.confidence)}
               </div>
-            </motion.div>
+            </div>
           );
         })}
       </div>
-    </motion.div>
+    </div>
   );
 };
 

@@ -4,60 +4,84 @@
 
 .about-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  gap: 20px;
-  margin-top: 30px;
+  justify-content: center;
+  gap: 40px;
+  margin: 50px 90px;
+  flex-wrap: wrap;
+}
+
+.about-name{
+  text-align: left;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-top: 10px;
 }
 
 /* 📦 Container */
 .circle-pop-container {
   position: relative;
-  width: 200px;
-  height: 260px;
+  width: 360px;
+  height: 440px;
   margin: 0 auto;
 }
 
 /* 🟡 Yellow circle behind the image */
 .circle-back {
   position: absolute;
-  width: 200px;
-  height: 200px;
-  background: #ffffff;
-  border-radius: 50%;
+  width: 380px;
+  height: 380px;
+  background: radial-gradient(circle, #ffffff 60%, #fdf6e7 100%);
+  border-radius: 40%;
   left: 0;
   bottom: 0;
   z-index: 1;
-  box-shadow: 0 12px 25px rgba(209, 185, 129, 0.493);
-  
+  box-shadow: 0 0 60px rgba(209, 185, 129, 0.6);
 }
 
+
 /* 👤 User image popping out */
+
 .circle-pop-img {
   position: relative;
-  width: 170px;
+  width: 280px;
   height: auto;
-  left: 0px;
-  bottom: -17px;
+  left: 10px;
+  bottom: -24px;
   z-index: 2;
-  transform: translateY(-30px);
+  transform: translateY(-34px);
   object-fit: cover;
-
-  /* ✅ Curve just the bottom, not the whole image */
   clip-path: inset(0 0 0 0 round 90px 90px);
 }
 
 
 /* 💬 Text below */
 .about-text {
-  max-width: 600px;
-  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem;
+  max-width: 500px;
+  text-align: left;
 }
 
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text, .about-name {
+    text-align: center;
+  }
+
+  .about-text{
+    justify-content: center;
+  }
+}
 .about-links {
   margin-top: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 20px;
 }
 

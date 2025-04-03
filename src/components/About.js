@@ -12,26 +12,38 @@ const About = () => {
       transition={{ duration: 0.6 }}
       viewport={{ once: true }}
     >
-      <h2>About Me</h2>
+      <div className="about-content">
+        {/* Image Section */}
+        <motion.div
+          className="circle-pop-container"
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <div className="circle-back"></div>
+          <img src={profileImg} alt="Profile" className="circle-pop-img" />
+        </motion.div>
 
-      <div className="about-wrapper">
-      <div className="circle-pop-container">
-  <div className="circle-back"></div>
-  <img src={profileImg} alt="Profile" className="circle-pop-img" />
-</div>
-
-
-        <div className="about-text">
+        {/* Text Section */}
+        <motion.div
+          className="about-text"
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+        >
+          <h3 className="about-name">Gargeya Akhilram Durgempudi</h3>
           <p>
             I’m currently pursuing my Master’s in Computer Science at the University of Houston-Clear Lake (Graduating May 2025).
-            I'm a full-stack developer with strong foundations in machine learning, cloud computing, and software engineering.
+            I'm a full-stack developer with strong foundations in web technologies, machine learning, cloud computing, and software engineering.
           </p>
           <div className="about-links">
-            <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://github.com/dakhilram" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://linkedin.com/in/akhilram-durgempudi" target="_blank" rel="noreferrer">LinkedIn</a>
             <a href="/Resume.pdf" download>Download Resume</a>
           </div>
-        </div>
+        </motion.div>
       </div>
     </motion.div>
   );

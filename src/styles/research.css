@@ -1,33 +1,47 @@
-.research-section {
-    text-align: center;
-  }
-  
-  .research-card {
-    background: #4cc8e7;
-    margin: 40px auto;
-    padding: 25px;
-    max-width: 700px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-    text-align: left;
-  }
-  
-  .research-summary {
-    margin-top: 10px;
-    font-size: 1rem;
-    color: #444;
-  }
-  
-  .tech-used {
-    margin: 12px 0;
-    font-size: 0.95rem;
-    color: #666;
-  }
-  
-  .research-links a {
-    text-decoration: none;
-    color: #00aaff;
-    font-weight: bold;
-    margin-right: 15px;
-  }
-  
+.research-container {
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.research-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.research-image img {
+  max-width: 50%;
+  margin-left: 20%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.research-text {
+  max-width: 600px;
+  font-family: 'Arial', sans-serif;
+}
+
+.research-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.research-text p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.research-text a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.research-text a:hover {
+  text-decoration: underline;
+}

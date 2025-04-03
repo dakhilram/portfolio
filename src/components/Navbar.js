@@ -26,7 +26,7 @@ const Navbar = () => {
   
   return (
     <nav className="navbar">
-      <div className="nav-logo">My Portfolio</div>
+      <div className="nav-logo">DGAR</div>
       <ul className="nav-links">
         <li onClick={() => scrollToSection("about")}>About</li>
         <li onClick={() => scrollToSection("skills")}>Skills</li>
