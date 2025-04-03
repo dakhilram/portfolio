@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import profileImg from "../assets/Profile.jpg"; // make sure this path is correct
+import profileImg from "../assets/Profile.png";
 import "./../styles/about.css";
 
 const About = () => {
@@ -14,8 +14,13 @@ const About = () => {
     >
       <h2>About Me</h2>
 
-      <div className="about-content">
-        <img src={profileImg} alt="Profile" className="about-image" />
+      <div className="about-wrapper">
+      <div className="circle-pop-container">
+  <div className="circle-back"></div>
+  <img src={profileImg} alt="Profile" className="circle-pop-img" />
+</div>
+
+
         <div className="about-text">
           <p>
             I’m currently pursuing my Master’s in Computer Science at the University of Houston-Clear Lake (Graduating May 2025).

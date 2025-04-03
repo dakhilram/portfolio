@@ -28,10 +28,11 @@
     transition: text-shadow 0.3s ease;
   }
   
-  .skill-icon:hover span {
-    text-shadow: 0 0 10px rgba(0, 170, 255, 0.9); /* glow effect */
-    transform: scale(1.2);
-  }
+  .skill-icon:hover {
+    background-color: transparent;
+    transform: scale(1.15); /* safer than scale shorthand */
+    z-index: 2;
+  }  
   
   .tooltip-container {
     position: relative;

@@ -21,11 +21,11 @@ body {
   }
   
   [data-theme="dark"] {
-    --bg: #111111;
-    --text: #f0f0f0;
-    --accent: #00ccff;
+    --bg: #121212;
+    --text: #ffffff;
+    --accent: #00c3ff;
     --card: #1e1e1e;
-  }
+  }  
   
   body {
     margin: 0;
