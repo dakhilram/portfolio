@@ -36,8 +36,15 @@ const About = () => {
           <h3 className="about-name">Gargeya Akhilram Durgempudi</h3>
           <p>
             I’m currently pursuing my Master’s in Computer Science at the University of Houston-Clear Lake (Graduating May 2025).
-            I'm a full-stack developer with strong foundations in web technologies, machine learning, cloud computing, and software engineering.
+            I'm a Full-Stack web developer with strong foundations in Web Technologies, Artificial Intelligence, Machine Learning, Cloud Computing, and Software Engineering.
           </p>
+          <div className="about-facts">
+            <div><strong>🎓 Degree:</strong> M.S. in Computer Science</div>
+            <div><strong>🏫 University:</strong> University of Houston-Clear Lake</div>
+            <div><strong>📅 Graduation:</strong> May 2025</div>
+            <div><strong>💼 Role:</strong> Student</div>
+          </div>
+
           <div className="about-links">
             <a href="https://github.com/dakhilram" target="_blank" rel="noreferrer">GitHub</a>
             <a href="https://linkedin.com/in/akhilram-durgempudi" target="_blank" rel="noreferrer">LinkedIn</a>
