@@ -38,13 +38,22 @@ const About = () => {
             I’m currently pursuing my Master’s in Computer Science at the University of Houston-Clear Lake (Graduating May 2025).
             I'm a Full-Stack web developer with strong foundations in Web Technologies, Artificial Intelligence, Machine Learning, Cloud Computing, and Software Engineering.
           </p>
+          <blockquote className="about-quote">
+            “Building solutions that make a difference — one line of code at a time.”
+          </blockquote>
+
           <div className="about-facts">
             <div><strong>🎓 Degree:</strong> M.S. in Computer Science</div>
             <div><strong>🏫 University:</strong> University of Houston-Clear Lake</div>
             <div><strong>📅 Graduation:</strong> May 2025</div>
             <div><strong>💼 Role:</strong> Student</div>
-          </div>
 
+            <span>🌍 Based in Houston, TX</span><br></br>
+            <span>🗣️ Fluent in English & Telugu</span>
+          </div>
+          <p className="about-current-focus">
+            🔍 Currently exploring: Real-time weather systems, disaster alert pipelines, and cloud-based ML deployment.
+          </p>
           <div className="about-links">
             <a href="https://github.com/dakhilram" target="_blank" rel="noreferrer">GitHub</a>
             <a href="https://linkedin.com/in/akhilram-durgempudi" target="_blank" rel="noreferrer">LinkedIn</a>

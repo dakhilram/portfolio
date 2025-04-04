@@ -1,4 +1,5 @@
 .about-section {
+  margin-top: -60px;
   text-align: center;
 }
 
@@ -15,7 +16,7 @@
 .about-name{
   font-family: cursive;
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: bold;
   margin-top: 70px;
 }
@@ -69,6 +70,13 @@
   margin-top: 20px;
   display: left;
   font-size: 1rem;
+}
+
+.about-quote {
+  margin-top: 20px;
+  font-style: italic;
+  color: #555;
+  font-size: 1.05rem;
 }
 
 
