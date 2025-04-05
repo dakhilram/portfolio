@@ -7,6 +7,7 @@ import Research from "./components/Research";
 import Contact from "./components/Contact";
 import "./styles/global.css";
 import Timeline from "./components/Timeline";
+import Certificates from "./components/Certificates";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <main>
         <section id="about"><About /></section>
         <section id="skills"><Skills /></section>
+        <section id="certificates"><Certificates /></section>
         <section id="projects"><Projects /></section>
         <section id="research"><Research /></section>
         <section id="timeline"><Timeline /></section>

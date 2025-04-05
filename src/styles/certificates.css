@@ -1,0 +1,108 @@
+/* === Base Styles for Certificates === */
+.certificates-section {
+    padding: 50px 0;
+    text-align: center;
+    background: #ffffff;
+    height: 700px;
+    position: relative;
+    transition: background 0.3s ease;
+  }
+  
+  .certificates-section h2 {
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 30px;
+    color: #000000;
+    text-align: center;
+    transition: color 0.3s ease;
+  }
+  
+  .certificates-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .certificate-list {
+    display: flex;
+    gap: 20px;
+    width: max-content;
+    animation: scrollCertificates 40s linear infinite;
+  }
+  
+  .paused {
+    animation-play-state: paused;
+  }
+  
+  .certificate-card {
+    width: 700px;
+    height: auto;
+    aspect-ratio: 4 / 3; /* Allows portrait and landscape images to fit */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.444);
+  }
+  
+  
+  .certificate-image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  
+  .certificate-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .certificate-card a:hover {
+    text-decoration: underline;
+  }
+  
+  /* === Keyframe Animation === */
+  @keyframes scrollCertificates {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  
+  /* === Dark Mode using data-theme like Skills section === */
+  [data-theme="dark"] .certificates-section {
+    background: #121111;
+  }
+  
+  [data-theme="dark"] .certificates-section h2 {
+    color: #ffffff;
+  }
+  
+  [data-theme="dark"] .certificate-card {
+    background-color: #292929;
+    color: #f1f1f1;
+    border: 1px solid #444;
+  }
+  
+  [data-theme="dark"] .certificate-card a {
+    color: #76c7f2;
+  }
+  
