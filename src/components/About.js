@@ -57,7 +57,7 @@ const About = () => {
           <div className="about-links">
             <a href="https://github.com/dakhilram" target="_blank" rel="noreferrer">GitHub</a>
             <a href="https://linkedin.com/in/akhilram-durgempudi" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href={`${process.env.PUBLIC_URL}/Resume.pdf`} download>
+            <a href={`${process.env.PUBLIC_URL}/portresume.pdf`} download>
               Download Resume
             </a>
           </div>
