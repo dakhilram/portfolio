@@ -35,8 +35,8 @@ const About = () => {
         >
           <h3 className="about-name">Gargeya Akhilram Durgempudi</h3>
           <p>
-            I’m currently pursuing my Master’s in Computer Science at the University of Houston-Clear Lake (Graduating May 2025).
-            I'm a Full-Stack web developer with strong foundations in Web Technologies, Artificial Intelligence, Machine Learning, Cloud Computing, and Software Engineering.
+          I'm a Full-Stack and AI/ML Engineer passionate about building intelligent, scalable, and impactful web solutions. 
+          With a strong foundation in software development and machine learning, I specialize in creating seamless user experiences, data-driven systems, and real-time cloud applications.
           </p>
           <blockquote className="about-quote">
             “Building solutions that make a difference — one line of code at a time.”
@@ -45,15 +45,15 @@ const About = () => {
           <div className="about-facts">
             <div><strong>🎓 Degree:</strong> M.S. in Computer Science</div>
             <div><strong>🏫 University:</strong> University of Houston-Clear Lake</div>
-            <div><strong>📅 Graduation:</strong> May 2025</div>
-            <div><strong>💼 Role:</strong> Student</div>
+            {/*<div><strong>📅 Graduation:</strong> May 2025</div>*/}
+            <div><strong>💼 Role:</strong> Full-Stack Developer</div>
 
-            <span>🌍 Based in Houston, TX</span><br></br>
+            <span>🌍 Based in USA</span><br></br>
             <span>🗣️ Fluent in English & Telugu</span>
           </div>
-          <p className="about-current-focus">
+          {/*<p className="about-current-focus">
             🔍 Currently exploring: Real-time weather systems, disaster alert pipelines, and cloud-based ML deployment.
-          </p>
+          </p>*/}
           <div className="about-links">
             <a href="https://github.com/dakhilram" target="_blank" rel="noreferrer">GitHub</a>
             <a href="https://linkedin.com/in/akhilram-durgempudi" target="_blank" rel="noreferrer">LinkedIn</a>

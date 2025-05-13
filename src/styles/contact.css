@@ -1,7 +1,13 @@
 .contact-section {
-    text-align: center;
-  }
-  
+  text-align: center;
+  min-height: 100vh;
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: transparent;
+}
+
   .contact-form {
     max-width: 500px;
     margin: 30px auto;

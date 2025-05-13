@@ -1,6 +1,14 @@
 .timeline-section {
-    text-align: center;
-  }
+  text-align: center;
+  background-color: transparent; /* Was white */
+  color: #f0f0f0;
+}
+
+.timeline-content {
+  background: #2a2d41;
+  color: #f0f0f0;
+}
+
   
   .timeline {
     position: relative;

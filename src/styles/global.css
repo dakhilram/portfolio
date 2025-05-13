@@ -1,44 +1,50 @@
+/* === Global Styles === */
+
 body {
-    margin: 0;
-    font-family: sans-serif;
-    scroll-behavior: smooth;
-  }
-  
-  .section {
-    padding: 100px 20px;
-    min-height: 100vh;
-  }
-  
-  main {
-    margin-top: 60px;
-  }
-  
-  :root {
-    --bg: #ffffff;
-    --text: #111111;
-    --accent: #00aaff;
-    --card: #f9f9f9;
-  }
-  
-  [data-theme="dark"] {
-    --bg: #121212;
-    --text: #ffffff;
-    --accent: #00c3ff;
-    --card: #1e1e1e;
-  }  
-  
-  body {
-    margin: 0;
-    font-family: sans-serif;
-    background-color: var(--bg);
-    color: var(--text);
-    scroll-behavior: smooth;
-  }
-  
-  .section {
-    padding: 100px 20px;
-    min-height: 100vh;
-    background: var(--bg);
-    color: var(--text);
-  }
-  
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at center top, #1e1e2f, #12121c);
+  color: #f0f0f0;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* === Universal Section Layout === */
+.section {
+  padding: 100px 20px;
+  min-height: 100vh;
+  background: transparent;
+  color: inherit;
+}
+
+/* === Smooth Scroll Margin Offset === */
+main {
+  margin-top: 60px;
+}
+
+/* === Unified Typography === */
+h1, h2, h3, h4, h5, h6,
+p, span, a, li, label, input, textarea, button {
+  color: #f0f0f0;
+  font-family: inherit;
+}
+
+/* === Remove default dark/light theme variables (not used) === */
+/*
+:root {
+  --bg: #ffffff;
+  --text: #111111;
+  --accent: #00aaff;
+  --card: #f9f9f9;
+}
+
+[data-theme="dark"] {
+  --bg: #121212;
+  --text: #ffffff;
+  --accent: #00c3ff;
+  --card: #1e1e1e;
+}
+*/
+

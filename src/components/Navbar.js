@@ -36,10 +36,7 @@ const Navbar = () => {
         <li onClick={() => scrollToSection("timeline")}>Timeline</li>
         <li onClick={() => scrollToSection("contact")}>Contact</li>
       </ul>
-      <button className="theme-toggle" onClick={toggleTheme}>
-  {theme === "light" ? "🌙" : "☀️"}
-</button>
-
+      
     </nav>
   );
 };

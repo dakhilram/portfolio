@@ -26,48 +26,19 @@ const Skills = () => {
   return (
     <div className="section skills-section">
       <h2>My Skills</h2>
-
-      <div className="skills-tabs">
-        {categories.map((tab) => (
-          <button
-            key={tab.key}
-            onClick={() => setActiveCategory(tab.key)}
-            className={activeCategory === tab.key ? "active" : ""}
-          >
-            {tab.icon} {tab.label}
-          </button>
-        ))}
-      </div>
-
-      <div className="skills-circle">
-        {filteredSkills.map((skill, index) => {
-          const angle = (2 * Math.PI * index) / filteredSkills.length;
-          const x = centerX + radius * Math.cos(angle) - 36;
-          const y = centerY + radius * Math.sin(angle) - 36;
-
-          return (
-            <div
-              key={skill.id}
-              className="skill-icon"
-              style={{
-                left: `${x}px`,
-                top: `${y}px`,
-              }}
-            >
-              <span>{skill.icon}</span>
-              <div className="tooltip">
-                <strong>{skill.name}</strong>
-                <br />
-                {skill.experience}
-                <br />
-                {"⭐".repeat(skill.confidence)}
-              </div>
+  
+      <div className="skills-list">
+        {skillData.map((skill) => (
+          <div className="skill-item" key={skill.name}>
+            <div className="skill-icon" title={`${skill.experience} experience`}>
+              <span className="icon">{skill.icon}</span>
+              <span className="name">{skill.name}</span>
             </div>
-          );
-        })}
+          </div>
+        ))}
       </div>
     </div>
   );
-};
+  };
 
 export default Skills;
