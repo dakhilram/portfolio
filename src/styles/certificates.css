@@ -1,18 +1,16 @@
 /* === Base Styles for Certificates === */
 .certificates-section {
-    padding: 50px 0;
-    text-align: center;
-    background: #ffffff;
-    height: 700px;
-    position: relative;
-    transition: background 0.3s ease;
-  }
+  padding: 50px 0;
+  text-align: center;
+  background: transparent;
+}
+
   
   .certificates-section h2 {
     font-size: 2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 30px;
-    color: #000000;
+    color: #cd7171;
     text-align: center;
     transition: color 0.3s ease;
   }
