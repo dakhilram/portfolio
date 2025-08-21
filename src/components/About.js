@@ -34,21 +34,20 @@ const About = () => {
           viewport={{ once: true }}
         >
           <h3 className="about-name">Gargeya Akhilram Durgempudi</h3>
-          <p>
-          I'm a Full-Stack and AI/ML Engineer passionate about building intelligent, scalable, and impactful web solutions. 
-          With a strong foundation in software development and machine learning, I specialize in creating seamless user experiences, data-driven systems, and real-time cloud applications.
-          </p>
+          <p>Full-Stack Java Developer with 3+ years’ experience designing and deploying scalable enterprise web apps. 
+            Skilled in Java, Spring Boot, Microservices, and REST APIs, with frontend expertise in React, Angular, and Redux. 
+            Proficient in AWS, Azure, Docker/K8s, and CI/CD pipelines.</p>
           <blockquote className="about-quote">
             “Building solutions that make a difference — one line of code at a time.”
           </blockquote>
 
           <div className="about-facts">
+            <div><strong>🏦 Company:</strong> Goldman Sachs (Current)</div>
+            <div><strong>💼 Role:</strong> Full-Stack Developer</div>
             <div><strong>🎓 Degree:</strong> M.S. in Computer Science</div>
             <div><strong>🏫 University:</strong> University of Houston-Clear Lake</div>
             {/*<div><strong>📅 Graduation:</strong> May 2025</div>*/}
-            <div><strong>💼 Role:</strong> Full-Stack Developer</div>
-
-            <span>🌍 Based in USA</span><br></br>
+            <span>🌍 Based in: Houston, Texas</span><br></br>
             <span>🗣️ Fluent in English & Telugu</span>
           </div>
           {/*<p className="about-current-focus">
@@ -57,7 +56,7 @@ const About = () => {
           <div className="about-links">
             <a href="https://github.com/dakhilram" target="_blank" rel="noreferrer">GitHub</a>
             <a href="https://linkedin.com/in/akhilram-durgempudi" target="_blank" rel="noreferrer">LinkedIn</a>
-            <a href={`${process.env.PUBLIC_URL}/GargeyaDurgempudi.pdf`} download>
+            <a href={`${process.env.PUBLIC_URL}/GargeyaAkhilramDurgempudi.pdf`} download>
               Download Resume
             </a>
           </div>
