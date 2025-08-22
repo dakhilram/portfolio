@@ -3,6 +3,7 @@ import skillData from "../config/skillData";
 import "../styles/skills.css";
 import { FaCode, FaGlobe, FaTools, FaDatabase } from "react-icons/fa";
 
+
 const categories = [
   { key: "All", label: "All", icon: <FaCode /> },
   { key: "Web", label: "Web", icon: <FaGlobe /> },

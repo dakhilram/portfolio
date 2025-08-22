@@ -1,137 +1,42 @@
 const skillData = [
-  // Full Stack / Web
-  {
-    name: "React.js",
-    icon: "⚛️",
-    experience: "2 years",
-    level: 4,
-  },
-  {
-    name: "Spring Boot",
-    icon: "🌿",
-    experience: "1 year",
-    level: 3,
-  },
+  // Backend
+  { name: "Java", icon: "☕", category: "Backend", experience: "3+ years" },
+  { name: "Spring Boot", icon: "🌱", category: "Backend", experience: "3+ years" },
+  { name: "Spring Security", icon: "🔒", category: "Backend", experience: "2+ years" },
+  { name: "Hibernate & JPA", icon: "📗", category: "Backend", experience: "3 years" },
+  { name: "Microservices", icon: "🔗", category: "Backend", experience: "3 years" },
+  { name: "Node.js", icon: "🌐", category: "Backend", experience: "2 years" },
 
   // Frontend
-  {
-    name: "HTML",
-    icon: "📄",
-    experience: "3 years",
-    level: 4,
-  },
-  {
-    name: "CSS",
-    icon: "🎨",
-    experience: "3 years",
-    level: 4,
-  },
-  {
-    name: "JavaScript",
-    icon: "⭐",
-    experience: "3 years",
-    level: 4,
-  },
+  { name: "React.js", icon: "⚛️", category: "Frontend", experience: "2 years" },
+  { name: "Angular", icon: "🅰️", category: "Frontend", experience: "1+ year" },
+  { name: "JavaScript", icon: "✨", category: "Frontend", experience: "3+ years" },
+  { name: "TypeScript", icon: "📘", category: "Frontend", experience: "1+ year" },
 
-  // Backend
-  {
-    name: "Flask",
-    icon: "🔥",
-    experience: "2 years",
-    level: 4,
-  },
-  {
-    name: "Django",
-    icon: "🐍",
-    experience: "1 year",
-    level: 3,
-  },
+  // Database
+  { name: "PostgreSQL", icon: "🐘", category: "Database", experience: "2 years" },
+  { name: "MySQL", icon: "🛢️", category: "Database", experience: "3+ years" },
+  //{ name: "MongoDB", icon: "🍃", category: "Database", experience: "2 years" },
 
-  // Cloud / DevOps
-  {
-    name: "Azure DevOps",
-    icon: "☁️",
-    experience: "1.5 years",
-    level: 4,
-  },
-  {
-    name: "Git",
-    icon: "🔧",
-    experience: "3 years",
-    level: 4,
-  },
-  {
-    name: "Maven",
-    icon: "📦",
-    experience: "1 year",
-    level: 3,
-  },
-  {
-    name: "Tomcat",
-    icon: "🐱",
-    experience: "1 year",
-    level: 3,
-  },
+  // Cloud & DevOps
+  { name: "AWS", icon: "☁️", category: "Cloud & DevOps", experience: "2 years" },
+  { name: "Azure", icon: "🔷", category: "Cloud & DevOps", experience: "1+ year" },
+  { name: "Docker", icon: "🐳", category: "Cloud & DevOps", experience: "2 years" },
+  { name: "Kubernetes", icon: "⎈", category: "Cloud & DevOps", experience: "1+ year" },
+  { name: "Jenkins", icon: "⚙️", category: "Cloud & DevOps", experience: "2 years" },
+  { name: "Kafka", icon: "🧩", category: "Cloud & DevOps", experience: "2 years" },
+  { name: "Git & GitHub", icon: "📂", category: "Tools", experience: "3+ years" },
 
-  // Programming
-  {
-    name: "Java",
-    icon: "☕",
-    experience: "3 years",
-    level: 4,
-  },
-  {
-    name: "Python",
-    icon: "🐍",
-    experience: "3 years",
-    level: 4,
-  },
-  {
-    name: "C",
-    icon: "🔣",
-    experience: "2 years",
-    level: 3,
-  },
+  // Testing
+  { name: "JUnit", icon: "🧪", category: "Testing", experience: "3 years" },
+  { name: "Mockito", icon: "🎯", category: "Testing", experience: "3 years" },
+  { name: "Selenium", icon: "🤖", category: "Testing", experience: "1+ year" },
 
-  // Databases
-  {
-    name: "PostgreSQL",
-    icon: "🐘",
-    experience: "2 years",
-    level: 4,
-  },
-  {
-    name: "MySQL",
-    icon: "🛢️",
-    experience: "2 years",
-    level: 4,
-  },
-
-  // Tools
-  {
-    name: "VS Code",
-    icon: "🖥️",
-    experience: "3 years",
-    level: 4,
-  },
-  {
-    name: "Eclipse",
-    icon: "🌘",
-    experience: "2 years",
-    level: 3,
-  },
-  {
-    name: "Google Colab",
-    icon: "📓",
-    experience: "2 years",
-    level: 4,
-  },
-  {
-    name: "Azure",
-    icon: "🔷",
-    experience: "1.5 years",
-    level: 4,
-  },
+  { name: "Spring Cloud", icon: "☁️", category: "Backend", experience: "2 years" },
+  { name: "OAuth2 / JWT", icon: "🔑", category: "Backend", experience: "2+ years" },
+  { name: "OpenAPI", icon: "📜", category: "Tools", experience: "2+ years" },
+  //{ name: "Redis", icon: "🧠", category: "Database", experience: "1+ year" },
+  //{ name: "RabbitMQ", icon: "🐇", category: "Cloud & DevOps", experience: "1+ year" },
 ];
 
 export default skillData;

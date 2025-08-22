@@ -46,9 +46,10 @@ const About = () => {
             <div><strong>💼 Role:</strong> Full-Stack Developer</div>
             <div><strong>🎓 Degree:</strong> M.S. in Computer Science</div>
             <div><strong>🏫 University:</strong> University of Houston-Clear Lake</div>
-            {/*<div><strong>📅 Graduation:</strong> May 2025</div>*/}
+            {/*<div><strong>📅 Graduation:</strong> May 2025</div>
+            <span>🗣️ Fluent in English & Telugu</span>*/}
             <span>🌍 Based in: Houston, Texas</span><br></br>
-            <span>🗣️ Fluent in English & Telugu</span>
+            
           </div>
           {/*<p className="about-current-focus">
             🔍 Currently exploring: Real-time weather systems, disaster alert pipelines, and cloud-based ML deployment.

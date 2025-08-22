@@ -10,7 +10,7 @@
     font-size: 2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 30px;
-    color: #cd7171;
+    color: #ffffff;
     text-align: center;
     transition: color 0.3s ease;
   }
@@ -42,12 +42,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: #2a2d41;
     box-sizing: border-box;
     border-radius: 10px;
     border: 1px solid #ccc;
     margin-bottom: 20px;
-    background-color: #ffffff;
+    text-decoration-color: black;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.444);
   }
   
@@ -62,16 +62,13 @@
   }
   
   
-  .certificate-card a {
-    color: #007bff;
+  .certificate-card a p{
+    display: block;
     text-decoration: none;
-    font-size: 1rem;
+    color: #ffffff;
     font-weight: bold;
+    margin-top: 10px;
     transition: color 0.3s ease;
-  }
-  
-  .certificate-card a:hover {
-    text-decoration: underline;
   }
   
   /* === Keyframe Animation === */
@@ -85,7 +82,7 @@
   }
   
   
-  /* === Dark Mode using data-theme like Skills section === */
+  /* === Dark Mode using data-theme like Skills section === 
   [data-theme="dark"] .certificates-section {
     background: #121111;
   }
@@ -103,4 +100,4 @@
   [data-theme="dark"] .certificate-card a {
     color: #76c7f2;
   }
-  
+  */

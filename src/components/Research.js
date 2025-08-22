@@ -1,6 +1,6 @@
 import React from "react";
 import "./../styles/research.css";
-import back from "../assets/background.jpeg";
+import back from "../assets/lungcertificates.png"; // Ensure the path is correct
 
 const Research = () => {
   return (

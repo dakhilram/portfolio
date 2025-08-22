@@ -1,70 +1,176 @@
-.timeline-section {
-  text-align: center;
-  background-color: transparent; /* Was white */
-  color: #f0f0f0;
+/* ===== Timeline (bottom → top) — with date→card connector lines ===== */
+
+.vtl-section { scroll-margin-top: 80px; }
+.vtl-section h2{
+  text-align:center;
+  font-size: clamp(1.6rem, 2vw, 2.25rem);
+  margin-bottom: 18px;
 }
 
-.timeline-content {
+/* Container */
+.vtl{
+  --center-line: 3px;   /* vertical center line thickness */
+  --gap:        36px;   /* vertical space between items */
+  --offset:     30px;   /* card offset from center line */
+  --date-gap:   14px;   /* distance between date pill and card (also connector length) */
+  --pill-font:  .78rem;
+
+  position: relative;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column-reverse;   /* earliest at bottom, latest at top */
+  gap: var(--gap);
+}
+
+/* Center vertical line */
+.vtl::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0; bottom: 0;
+  width: var(--center-line);
+  transform: translateX(-50%);
+  background: linear-gradient(#8bd5ff, #b7bdf8);
+  opacity: .9;
+  border-radius: 2px;
+}
+
+/* Each entry row */
+.vtl-item{
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+/* Left column (anchors layout to the center line) */
+.vtl-node{
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end; /* anchor to center line */
+  align-items: center;
+}
+
+/* Card */
+.vtl-card{
+  position: relative;
+  width: 50%;
+  margin-left: var(--offset);          /* breathing room from the line */
   background: #2a2d41;
   color: #f0f0f0;
+  border-radius: 14px;
+  padding: 14px 16px;
+  box-shadow: 0 12px 28px rgba(0,0,0,.28);
+  border-left: none;                   /* no heavy vertical accent */
+  transition: transform .16s ease, box-shadow .16s ease;
+}
+.vtl-card:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(0,0,0,.34);
 }
 
-  
-  .timeline {
-    position: relative;
-    margin: 40px auto;
-    padding-left: 30px;
-    max-width: 700px;
+/* Date pill attached to the card’s left edge */
+.vtl-date{
+  position: absolute;
+  right: 100%;                         /* place to the LEFT of the card */
+  margin-right: var(--date-gap);
+  top: 50%;
+  transform: translateY(-50%);
+  background: #1f2233;
+  color: #eaeaf0;
+  border: 1px solid rgba(255,255,255,.10);
+  font-size: var(--pill-font);
+  padding: 4px 10px;
+  border-radius: 9999px;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+/* Connector line from date pill → card */
+.vtl-date::before{
+  content: "";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--date-gap);              /* exactly spans the gap to the card */
+  height: var(--center-line);
+  background: linear-gradient(90deg,#8bd5ff,#b7bdf8);
+  border-radius: 2px;
+}
+
+/* Typography */
+.vtl-title{ font-weight: 800; font-size: 1.05rem; letter-spacing: .2px; }
+.vtl-sub  { margin-top: 2px; color: #cfd3ff; font-size: .92rem; }
+.vtl-desc { margin-top: 8px; line-height: 1.48; }
+
+/* Optional: “Current” badge (only shown if rendered in JSX) */
+.vtl-status{
+  margin-left: 8px;
+  font-size: .72rem;
+  background: #3b825f;
+  color: #eafff2;
+  padding: 2px 8px;
+  border-radius: 9999px;
+  vertical-align: middle;
+}
+
+/* Reserved hooks if you later want per-type accents */
+.vtl-item[data-type="work"]     .vtl-card{ --accent: #8bd5ff; }
+.vtl-item[data-type="edu"]      .vtl-card{ --accent: #b7bdf8; }
+.vtl-item[data-type="research"] .vtl-card{ --accent: #eed49f; }
+
+/* ===== Mobile ===== */
+@media (max-width: 720px){
+  .vtl{
+    max-width: 100%;
+    --offset: 22px;
+    --gap: 28px;
+    --date-gap: 10px;
+    --pill-font: .76rem;
   }
-  
-  .timeline::before {
-    content: "";
-    position: absolute;
-    left: 15px;
-    top: 0;
-    bottom: 0;
-    width: 2px;
-    background: var(--accent);
+  .vtl::before{ left: 24px; transform: none; }
+  .vtl-node{ width: auto; min-width: 48px; justify-content: flex-start; }
+
+  .vtl-card{
+    width: auto;
+    flex: 1;
+    margin-left: var(--offset);
   }
-  
-  .timeline-item {
-    display: flex;
-    align-items: flex-start;
-    margin-bottom: 40px;
-    position: relative;
+
+  /* On small screens put the date above the card and hide the connector */
+  .vtl-date{
+    position: static;
+    transform: none;
+    display: inline-block;
+    margin: 0 0 8px 0;
   }
-  
-  .timeline-dot {
-    width: 14px;
-    height: 14px;
-    background-color: var(--accent);
-    border-radius: 50%;
-    position: absolute;
-    left: 8px;
-    top: 5px;
-  }
-  
-  .timeline-content {
-    background: var(--card);
-    padding: 15px 20px;
-    margin-left: 30px;
-    border-radius: 8px;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.05);
-    text-align: left;
-  }
-  
-  .timeline-year {
-    font-weight: bold;
-    color: var(--accent);
-  }
-  
-  .timeline-location {
-    font-size: 0.9rem;
-    color: gray;
-    margin-bottom: 8px;
-  }
-  
-  .timeline-desc {
-    font-size: 0.95rem;
-  }
-  
+  .vtl-date::before{ display: none; }
+}
+
+/* subtler center line */
+.vtl::before{
+  background: linear-gradient(#9ddaff, #c3caff);
+  opacity:.75;
+}
+
+/* when a card is hovered, gently light up the nearby line */
+ /* noop to keep specificity low */
+.vtl-item:hover .vtl-card{ filter:none; }
+.vtl-item:hover .vtl-card,
+.vtl-item:hover .vtl-date,
+.vtl-item:hover .vtl-date::before{
+  box-shadow: none;
+}
+.vtl-item:hover .vtl-card{ 
+  transform: translateY(-2px);
+}
+.vtl-item:hover .vtl-date{
+  border-color: rgba(255,255,255,.18);
+}
+.vtl-item:hover .vtl-date::before{
+  background: linear-gradient(90deg,#83d4ff,#b0b7ff);
+}

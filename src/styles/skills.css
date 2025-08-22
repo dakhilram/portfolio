@@ -15,9 +15,13 @@
   margin-right: auto;
 }
 
+/* put near the top of your skills CSS */
+.skills-section { --skill-card-w: 230px; }  /* change to any width */
+
+/* replace your .skill-item rule with: */
 .skill-item {
-  flex: 1 1 180px;
-  max-width: 180px;
+  flex: 0 0 var(--skill-card-w);
+  max-width: var(--skill-card-w);
 }
 
 .skill-icon {
@@ -33,7 +37,8 @@
   font-size: 18px;
   cursor: default;
   transition: transform 0.2s ease-in-out;
-  height: 60px;
+  height: 50px;
+  
 }
 
 .skill-icon:hover {
