@@ -8,39 +8,60 @@
   background-color: transparent;
 }
 
-  .contact-form {
-    max-width: 500px;
-    margin: 30px auto;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .contact-form input,
-  .contact-form textarea {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
-  }
-  
-  .contact-form button {
-    padding: 10px;
-    background-color: #00aaff;
-    color: white;
-    border: none;
-    font-weight: bold;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .contact-form button:hover {
-    background-color: #008ecc;
-  }
-  
-  .success-msg {
-    color: green;
-    margin-top: 10px;
-  }
-  
+/* Contact Form */
+.contact-form {
+  max-width: 500px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #111;  /* darker input background */
+  color: #fff;             /* text color inside inputs */
+  outline: none;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Placeholder color */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #aaa;             /* lighter placeholder text */
+}
+
+/* Focus effect */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #00aaff;
+  background-color: #1a1a1a;
+}
+
+/* Button */
+.contact-form button {
+  padding: 10px;
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form button:hover {
+  background-color: #008ecc;
+  transform: scale(1.02);
+}
+
+/* Success Message */
+.success-msg {
+  color: #00ff88;
+  margin-top: 10px;
+  font-weight: 500;
+}

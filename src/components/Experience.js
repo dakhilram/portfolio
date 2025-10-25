@@ -3,37 +3,39 @@ import "../styles/experience.css";
 
 const experiences = [
   {
-    company: "Goldman Sachs",
+    company: "Citizens Bank",
     icon: "🏦",
-    role: "Full-Stack Developer",
+    role: "Full Stack Developer",
     location: "Remote, USA",
-    dates: "Aug 2024 – Present",
+    dates: "Oct 2024 – Present",
     bullets: [
-      "Built a modular digital banking platform using Java, Spring Boot, and Microservices; exposed REST APIs via Spring MVC & OpenAPI.",
-      "Implemented Spring Security with JWT/OAuth2 and RBAC to meet financial compliance requirements.",
-      "Enabled async/event flows with Apache Kafka; improved service responsiveness and reliability.",
-      "Containerized services and automated CI/CD with Docker, Jenkins, Maven, and Git across dev/QA/UAT."
+      "Developed an AI-powered financial advisor chatbot using LLaMA 3 and spaCy for real-time, context-aware customer guidance, reducing support tickets by 40%.",
+      "Built backend microservices with Java, Spring Boot, and WebFlux integrated with PostgreSQL and fine-tuned LLaMA 3 models via RESTful APIs.",
+      "Created interactive React + React Query dashboards visualizing engagement metrics, chatbot performance, and usage trends.",
+      "Implemented OAuth2/JWT-based authentication, SSO integration, and role-based access control (RBAC) aligned with SOC 2 and FAPI standards.",
+      "Automated CI/CD pipelines using Jenkins and GitHub Actions with SonarQube, JaCoCo, and Selenium for high code quality and coverage."
     ],
     tech: [
-      "Java","Spring Boot","Spring Security","Spring MVC","Microservices",
-      "Hibernate/JPA","MySQL","Kafka","Docker","Jenkins","Maven","Git","OpenAPI"
+      "Java", "Spring Boot", "Spring WebFlux", "PostgreSQL", "React", "React Query",
+      "OAuth2/JWT", "SSO", "LLaMA 3", "spaCy", "Docker", "Kubernetes", "Kafka", "Jenkins", "GitHub Actions"
     ],
   },
   {
-    company: "Capgemini",
-    icon: "🏢",
-    role: "Full-Stack Developer",
-    location: "Hyderabad, India",
-    dates: "Sep 2021 – Jul 2023",
+    company: "eBay",
+    icon: "🛒",
+    role: "Full Stack Developer",
+    location: "Bengaluru, India",
+    dates: "Jan 2021 – Jul 2023",
     bullets: [
-      "Delivered a financial transaction platform (Java, Spring Boot, Spring MVC) with real-time account & transfer APIs.",
-      "Secured services with JWT-based auth and RBAC; used Hibernate/JPA with MySQL on AWS RDS for ACID compliance.",
-      "Cut deployment cycles by ~40% via Jenkins + Docker pipelines; achieved 95%+ unit/integration coverage with JUnit/Mockito.",
-      "Improved responsiveness by ~30% with Redis caching; upgraded dashboard using React/Redux, boosting engagement by ~25%."
+      "Developed 'SmartListings', an internal platform for dynamic pricing, bulk uploads, and real-time inventory synchronization.",
+      "Architected distributed microservices using Java, Spring Boot, Spring Cloud, and WebFlux with reactive APIs and RabbitMQ for async operations.",
+      "Enhanced seller dashboards with React.js and optimized state management, boosting engagement by 30% and reducing support tickets by 25%.",
+      "Implemented secure REST APIs with Spring Security and Oracle SQL; improved query performance by 45% through advanced indexing and partitioning.",
+      "Achieved 90% test coverage using JUnit 5, Mockito, and Selenium integrated into Azure DevOps CI/CD pipelines, cutting QA cycles by 35%."
     ],
     tech: [
-      "Java","Spring Boot","Spring MVC","Hibernate/JPA","MySQL (AWS RDS)","JWT/OAuth2",
-      "Redis","React","Redux","AWS","Docker","Jenkins","JUnit","Mockito","Swagger"
+      "Java", "Spring Boot", "Spring Cloud", "Spring WebFlux", "React.js", "RabbitMQ",
+      "Oracle SQL", "JUnit 5", "Mockito", "Selenium", "Azure DevOps", "Docker", "Kubernetes", "Helm"
     ],
   },
 ];

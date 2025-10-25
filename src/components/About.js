@@ -42,7 +42,7 @@ const About = () => {
           </blockquote>
 
           <div className="about-facts">
-            <div><strong>🏦 Company:</strong> Goldman Sachs (Current)</div>
+            <div><strong>🏦 Company:</strong> Citizens Bank (Current)</div>
             <div><strong>💼 Role:</strong> Full-Stack Developer</div>
             <div><strong>🎓 Degree:</strong> M.S. in Computer Science</div>
             <div><strong>🏫 University:</strong> University of Houston-Clear Lake</div>

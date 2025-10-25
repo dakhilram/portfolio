@@ -10,16 +10,16 @@ const items = [
     title: "B.Tech in Computer Science Engineering",
     org: "Koneru Lakshmaiah University",
     location: "Vijayawada, India",
-    desc: "Strong foundation in programming, systems, and software engineering."
+    desc: "Built a strong foundation in programming, algorithms, and full-stack software engineering."
   },
   {
     type: "work",
-    start: "Sep 2021",
+    start: "Jan 2021",
     end: "Jul 2023",
-    title: "Full-Stack Developer",
-    org: "Capgemini",
-    location: "Hyderabad, India",
-    desc: "Java/Spring Boot, Microservices, Hibernate/JPA, MySQL (AWS RDS); CI/CD with Jenkins & Docker."
+    title: "Full Stack Developer",
+    org: "eBay",
+    location: "Bengaluru, India",
+    desc: "Developed SmartListings using Java, Spring Boot, and React; built distributed microservices with RabbitMQ and Spring Cloud; boosted engagement by 30% and reduced support tickets by 25%."
   },
   {
     type: "research",
@@ -28,7 +28,7 @@ const items = [
     title: "Research Paper — Lung Cancer Detection (EfficientNet B2)",
     org: "IEEE Publication",
     location: "",
-    desc: "Deep learning–based detection; ~90%+ accuracy using EfficientNet B2."
+    desc: "Published a deep learning model achieving ~90% accuracy in lung cancer detection using EfficientNet B2."
   },
   {
     type: "edu",
@@ -37,23 +37,23 @@ const items = [
     title: "M.S. in Computer Science",
     org: "University of Houston–Clear Lake",
     location: "Houston, TX, USA",
-    desc: "Coursework in AI, ML, Software Engineering, and OOP."
+    desc: "Graduate coursework focused on Artificial Intelligence, Machine Learning, Software Engineering, and Object-Oriented Programming."
   },
   {
     type: "work",
-    start: "Aug 2024",
+    start: "Oct 2024",
     end: "Present",
-    title: "Full-Stack Developer",
-    org: "Goldman Sachs",
+    title: "Full Stack Developer",
+    org: "Citizens Bank",
     location: "Remote, USA",
-    desc: "Digital banking platform with Java/Spring Boot/Microservices, Spring Security (JWT/OAuth2), Kafka; CI/CD with Docker & Jenkins."
+    desc: "Developed an AI-powered financial advisor chatbot using LLaMA 3 and spaCy; built backend microservices with Java Spring Boot and WebFlux, integrated PostgreSQL, and automated CI/CD with Jenkins and GitHub Actions."
   }
 ];
 
 const Timeline = () => {
   return (
     <section id="timeline" className="section vtl-section">
-      <h2>Timeline</h2>
+      <h2>My Journey</h2>
 
       {/* column-reverse = earliest at bottom, latest at top */}
       <div className="vtl">
